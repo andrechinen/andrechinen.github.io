@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe 2: Multiplayer – Privacy Policy & Support</title>
+  <meta name="description" content="Official website, Privacy Policy, and Support page for Tic Tac Toe 2 (Jogo da Velha 2) by André Felipe Chinen.">
+  <style>
+    :root {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --card-border: #333333;
+      --text-primary: #f0f0f0;
+      --text-secondary: #aaaaaa;
+      --accent-blue: #448aff;
+      --accent-green: #4caf50;
+      --accent-red: #ff5252;
+      --accent-orange: #ff9900;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 0 80px 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(68, 138, 255, 0.15);
+      color: var(--accent-blue);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      color: var(--text-primary);
+      text-decoration: none;
+      background-color: #2a2a2a;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid #444;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #383838;
+      border-color: var(--accent-blue);
+      color: #ffffff;
+    }
+
+    .nav-btn.primary {
+      background-color: var(--accent-blue);
+      border-color: var(--accent-blue);
+      color: #fff;
+    }
+
+    .nav-btn.primary:hover {
+      background-color: #3370d4;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 35px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ffffff;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 20px 0 10px 0;
+      color: var(--accent-blue);
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 15px;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 10px 0 20px 25px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 0.98rem;
+    }
+
+    strong {
+      color: var(--text-primary);
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background-color: #171717;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .contact-item strong {
+      min-width: 140px;
+    }
+
+    .btn-email {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: var(--accent-green);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      align-self: flex-start;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-email:hover {
+      background-color: #3d8b40;
+      text-decoration: none;
+    }
+
+    .faq-item {
+      margin-bottom: 18px;
+      background: #171717;
+      padding: 15px 18px;
+      border-radius: 10px;
+      border-left: 3px solid var(--accent-blue);
+    }
+
+    .faq-item h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #666666;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #888888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 0 60px 0;
+      }
+      section {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">Official App Website</span>
+      <h1>Tic Tac Toe 2: Multiplayer</h1>
+      <p class="subtitle">(Jogo da Velha 2) &bull; Developer: André Felipe Chinen</p>
+      
+      <div class="nav-links">
+        <a href="#support" class="nav-btn primary">Support & Contact</a>
+        <a href="#privacy" class="nav-btn">Privacy Policy</a>
+        <a href="/app-ads.txt" class="nav-btn">app-ads.txt</a>
+      </div>
+    </header>
+
+    <!-- Support Section (Mandatory for App Store Connect) -->
+    <section id="support">
+      <h2>App Support & Contact</h2>
+      <p>
+        Welcome to the official support page for <strong>Tic Tac Toe 2: Multiplayer</strong> (available for iOS and Android).
+        If you have any questions, encounter a technical issue, want to report a bug, or need help with your account, we are here to assist you.
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-item">
+          <strong>Developer:</strong>
+          <span>André Felipe Chinen</span>
+        </div>
+        <div class="contact-item">
+          <strong>Support Email:</strong>
+          <span><a href="mailto:afchinen@gmail.com">afchinen@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+          <strong>Response Time:</strong>
+          <span>Usually within 24 to 48 business hours</span>
+        </div>
+        <a href="mailto:afchinen@gmail.com?subject=Tic%20Tac%20Toe%202%20Support%20Request" class="btn-email">Contact Support via Email</a>
+      </div>
+
+      <h3 style="margin-top: 30px;">Frequently Asked Questions (FAQ)</h3>
+
+      <div class="faq-item">
+        <h4>How does Online Multiplayer work?</h4>
+        <p>You can play against opponents in Ranked Matchmaking or create a custom 6-character room code to challenge a friend in private matches.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How is the competitive rating (Elo) calculated?</h4>
+        <p>Winning a match increases your Elo points based on your opponent's rating, while losing deducts points. Abandoning active matches results in an automatic loss to keep the system fair.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How can I request data or nickname deletion?</h4>
+        <p>You can request full removal of your nickname, match history, and Elo ranking by emailing us directly at <a href="mailto:afchinen@gmail.com">afchinen@gmail.com</a> with your in-game nickname.</p>
+      </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p><em>Last updated: November 2026</em></p>
+      
+      <p>
+        This Privacy Policy describes how independent developer <strong>André Felipe Chinen</strong> collects, uses, and protects your information when you use the <strong>"Tic Tac Toe 2"</strong> (or <strong>"Jogo da Velha 2"</strong>) application on iOS and Android. By using the game, you agree to the collection and use of information in accordance with this policy.
+      </p>
+
+      <h3>1. Information We Collect</h3>
+      <p>To ensure the functioning of the multiplayer mode and the ranking system, as well as for the display of advertisements, we collect the following types of data:</p>
+      <ul>
+        <li><strong>Data provided by you:</strong> When you access the online mode, we request the creation of a "Nickname". This nickname is public and used exclusively for identification in matches and on the Global Leaderboard.</li>
+        <li><strong>Game data:</strong> We record your history of wins, losses, draws, and your score (Elo) to keep the competitive ranking system updated.</li>
+        <li><strong>Automatically collected data:</strong> Through third-party services (detailed below), your IP address, device type, mobile advertising identifiers, and app usage data may be collected automatically.</li>
+      </ul>
+
+      <h3>2. Third-Party Services</h3>
+      <p>Tic Tac Toe 2 uses third-party services that may collect information for the proper functioning of their respective tools. Links to the privacy policies of the third-party service providers used in the application:</p>
+      <ul>
+        <li><strong>Supabase:</strong> We use Supabase as our database and real-time communication infrastructure (multiplayer). Profile data (nickname and score) are stored securely on their servers. (<a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a>)</li>
+        <li><strong>Google AdMob:</strong> We use AdMob to serve ads in the game. Google may use your device's advertising ID and cookies to serve personalized or non-personalized ads based on your interests and usage history. (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a>)</li>
+      </ul>
+
+      <h3>3. Use of Information</h3>
+      <p>The collected information is used exclusively for the following purposes:</p>
+      <ul>
+        <li>Allowing the creation of private rooms and matchmaking with other players around the world.</li>
+        <li>Maintaining and displaying the updated Global Leaderboard.</li>
+        <li>Monetizing the application for free for the user through the display of banner and interstitial advertisements.</li>
+        <li>Fixing technical bugs and improving the stability and performance of the game.</li>
+      </ul>
+
+      <h3>4. Your Rights</h3>
+      <p>In compliance with international data protection laws (such as GDPR and LGPD), you have the right to:</p>
+      <ul>
+        <li>Access the data we hold about you (your nickname and score).</li>
+        <li>Request the correction of incomplete or outdated data.</li>
+        <li>Request the complete deletion of your profile and match history from our database.</li>
+      </ul>
+      <p>To exercise your right to delete your data, please contact us via the email listed below.</p>
+
+      <h3>5. Security</h3>
+      <p>
+        We value your trust in providing us with your information. Our infrastructure uses industry-standard security measures (including strict database Row Level Security rules that prevent unauthorized alteration of points and profiles). However, remember that no method of transmission over the internet or method of electronic storage is 100% secure and reliable.
+      </p>
+
+      <h3>6. Changes to This Privacy Policy</h3>
+      <p>
+        We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
+      </p>
+
+      <h3>7. Contact Us</h3>
+      <p>
+        If you have any questions or suggestions about our Privacy Policy, or wish to request the deletion of your data, do not hesitate to contact us at: <a href="mailto:afchinen@gmail.com">afchinen@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 André Felipe Chinen. All rights reserved.</p>
+      <p style="margin-top: 6px;">Tic Tac Toe 2: Multiplayer &bull; <a href="#privacy">Privacy</a> &bull; <a href="#support">Support</a> &bull; <a href="/app-ads.txt">app-ads.txt</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
