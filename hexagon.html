@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexagon &amp; More Games &bull; Support, Marketing &amp; Privacy Policy</title>
+  <meta name="description" content="Official website, Support, and Privacy Policy for Hexagon &amp; More Games by André Felipe Chinen.">
+  <style>
+    :root {
+      --bg-dark: #0d0f17;
+      --card-bg: #161b2b;
+      --card-border: #252e47;
+      --primary: #8a5cf6;
+      --primary-hover: #7c3aed;
+      --accent-gold: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 0 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 0 80px 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px 50px 20px;
+      background: radial-gradient(ellipse at top, #231b47 0%, var(--bg-dark) 70%);
+      border-radius: 24px;
+      margin-bottom: 48px;
+      border: 1px solid var(--card-border);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(138, 92, 246, 0.18);
+      color: #c4b5fd;
+      border: 1px solid rgba(138, 92, 246, 0.4);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffffff 40%, #c4b5fd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 28px auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(138, 92, 246, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(138, 92, 246, 0.6);
+    }
+
+    .btn-secondary {
+      background: var(--card-bg);
+      color: var(--text-main);
+      border: 1px solid var(--card-border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 26px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .policy-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 48px;
+    }
+
+    .policy-box h2 {
+      font-size: 1.7rem;
+      margin-bottom: 8px;
+    }
+
+    .policy-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .policy-box h3 {
+      font-size: 1.15rem;
+      color: #fff;
+      margin: 24px 0 10px 0;
+    }
+
+    .policy-box p, .policy-box ul {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .policy-box ul {
+      padding-left: 24px;
+    }
+
+    .policy-box a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .policy-box a:hover {
+      text-decoration: underline;
+    }
+
+    .support-box {
+      background: linear-gradient(135deg, rgba(138, 92, 246, 0.12) 0%, rgba(6, 182, 212, 0.08) 100%);
+      border: 1px solid rgba(138, 92, 246, 0.35);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 48px;
+    }
+
+    .support-box h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .support-box p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 10px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .contact-email:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding-top: 30px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .policy-box {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        🔷 <span>Hexagon &amp; More Games</span>
+      </div>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#support">Support</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="/">Tic Tac Toe 2</a>
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </nav>
+    </header>
+
+    <!-- HERO / MARKETING SECTION -->
+    <section class="hero" id="marketing">
+      <div class="badge">iOS App Store &bull; Mind Game</div>
+      <h1>Hexagon &amp; More Games</h1>
+      <p>
+        Challenge your brain with strategic memory and calculation puzzles inspired by the hit series <em>The Devil's Plan</em>! Compete against friends in fast-paced local multiplayer matches.
+      </p>
+      <div class="hero-buttons">
+        <a href="#games" class="btn btn-primary">Explore Game Modes</a>
+        <a href="#support" class="btn btn-secondary">Get Support</a>
+      </div>
+    </section>
+
+    <!-- GAME MODES SECTION -->
+    <section id="games">
+      <h2 class="section-title">🔷 Featured Game Modes</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🔷</div>
+          <h3>Hexagon</h3>
+          <p>
+            Memorize numbers and their positions across hexagonal tiles. Race against the timer to identify the winning combinations that add up to the target number!
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔺</div>
+          <h3>Equation Pyramid</h3>
+          <p>
+            Strategically combine 3 tiles and arithmetic operators to hit the exact TARGET number, strictly respecting mathematical order of operations.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Local Multiplayer</h3>
+          <p>
+            Play with 1 to 4 players on a single device with a built-in buzz-in buzzer, customized round timers, and end-of-round solution visualizers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT SECTION -->
+    <section class="support-box" id="support">
+      <h2>📬 Support &amp; Contact / Suporte</h2>
+      <p>
+        Have questions, feedback, or encountered a bug while playing? Need assistance with local matches or wish to request data removal? Contact us directly:
+      </p>
+      <a href="mailto:afchinen@gmail.com" class="contact-email">✉️ afchinen@gmail.com</a>
+      <p style="margin-top: 16px; font-size: 0.9rem;">
+        Developer: André Felipe Chinen &bull; Response time: typically within 24–48 hours.
+      </p>
+    </section>
+
+    <!-- PRIVACY POLICY SECTION -->
+    <section class="policy-box" id="privacy">
+      <h2>Privacy Policy</h2>
+      <div class="policy-date">Last updated: November 12, 2026</div>
+
+      <p>
+        This Privacy Policy explains how <strong>Hexagon &amp; More Games</strong> developed by <strong>André Felipe Chinen</strong> handles your data. We respect your privacy and are committed to protecting any information collected while using our applications.
+      </p>
+
+      <h3>1. Information We Collect</h3>
+      <p>
+        <strong>Hexagon &amp; More Games</strong> does not require account creation, registration, or login. All game settings, player names for local matches, and match scores are processed locally on your device and are not transmitted to any private server.
+      </p>
+
+      <h3>2. Third-Party Advertising (Google AdMob)</h3>
+      <p>
+        We use <strong>Google AdMob</strong> to display advertisements (such as interstitial ads between game rounds). Google AdMob may collect and process information such as:
+      </p>
+      <ul>
+        <li>Device identifiers (such as IDFA, where permitted by user consent).</li>
+        <li>IP address and general coarse location data.</li>
+        <li>Diagnostic and ad performance data (impressions, clicks).</li>
+      </ul>
+      <p>
+        For more information on how Google uses data from apps that partner with them, please visit:
+        <br>
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads &amp; Privacy Policy</a>
+      </p>
+
+      <h3>3. Children's Privacy</h3>
+      <p>
+        Our applications are intended for a general audience. We do not knowingly collect personal identifiable information from children under 13. If you believe your child has provided us with personal information, please contact us so we can take appropriate measures.
+      </p>
+
+      <h3>4. User Rights (GDPR &amp; LGPD)</h3>
+      <p>
+        In compliance with global data protection regulations (such as the European Union's GDPR and Brazil's LGPD), you have the right to access, rectify, or request deletion of any personal data associated with your interaction with our services. To exercise these rights, please email us.
+      </p>
+
+      <h3>5. Contact Us</h3>
+      <p>
+        If you have questions regarding this Privacy Policy, please contact:
+        <br>
+        <strong>Email:</strong> <a href="mailto:afchinen@gmail.com">afchinen@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 André Felipe Chinen. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="#marketing">Marketing</a> &bull;
+        <a href="#support">Support</a> &bull;
+        <a href="#privacy">Privacy Policy</a> &bull;
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </p>
+    </footer>
+  </div>
+
+</body>
+</html>
